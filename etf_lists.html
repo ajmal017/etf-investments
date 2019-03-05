@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="https://etf.investments/favicon.ico">
+    <meta name="description" content="ETF Fund Flow Monitor">
+    <html itemscope itemtype="http://schema.org/FinancialService">
+    <title>ETF Fund Flows & Signals</title>
+    <meta name="description" content="Monitor ETF prices and fund flows acoss sectors, factors, investment styles and countries. " />
+    <meta itemprop="name" content="ETF Fund Flow and Return Momentum Monitor and Signals">
+    <meta itemprop="description" content="Monitor ETF prices and fund flows acoss sectors, factors, investment styles and countries. "">
+  
+    <link rel="stylesheet" type="text/css" href="etf_inv.css">
+    <script type="text/javascript" src="etf_inv_lib.js"></script>
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-1243516152836996",
+	    enable_page_level_ads: true
+	  });
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116174436-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-116174436-1');
+	</script>
+
+  </head>
+
+  <body>
+    <div class="page-title"></div>
+    <div class="page-links"></div>
+    <p class="updated-timestamp"></p>
+    <div class="stocks-container"></div>
+
+    <script>
+      let pageTitleDiv = document.querySelector('.page-title');
+      let pageLinksDiv = document.querySelector('.page-links');
+      let containerDiv = document.querySelector('.stocks-container');
+      let updatedDiv = document.querySelector('.updated-timestamp');
+
+      loadPageDetails();
+      addPageLinks();
+    </script>
+  </body>
+</html>
