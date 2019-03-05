@@ -141,7 +141,8 @@ function addPageLinks() {
       <a href="etf_lists.html?page=fund_flows_ytd&title=Top ETF Flows YTD">Top Flows YTD</a> |
       <a href="etf_lists.html?page=newest_etfs&title=Recent ETF Listings">Newest Listings</a> |
       <a href="etf_lists.html?page=commodity&title=Commodity ETFs">Commodities</a> |
-      <a href="etf_lists.html?page=leveraged&title=Leveraged ETFs">Leveraged</a> 
+      <a href="etf_lists.html?page=leveraged&title=Leveraged ETFs">Leveraged</a>  | 
+      <a href="etf_lists.html?page=volatility&title=Volatility ETFs">Volatility</a> 
 
     </p>  
      <p>
