@@ -443,14 +443,14 @@ function loadPageListData(response) {
 
 function loadPageDetails() {
   if (!window.location.search) { 
-      loadJSON(loadPageListData,'https://etf.investments/universe.json');
+      loadJSON(loadPageListData,'https://etf.investments/data/universe.json');
       pageTitleDiv.innerHTML = `<p><h1> ETF Price and Fund Flow Monitor </h1></p>`;
       return;
   };
   let params = new URLSearchParams(window.location.search);
   for (let p of params) {
     if(p[0] === 'page'){
-      loadJSON(loadPageListData,'https://etf.investments/'+p[1]+".json");
+      loadJSON(loadPageListData,'https://etf.investments/data/'+p[1]+".json");
     }
     if(p[0] === 'title'){
       pageTitleDiv.innerHTML = `<p><h1> ${p[1]} </h1></p>`;
@@ -460,7 +460,7 @@ function loadPageDetails() {
 
 
 function symbolUrl(symbol) {
-  return `https://etf.investments/stocks/${symbol}.html`;
+  return `https://etf.investments/data/stocks/${symbol}.html`;
 }
 
 function formatQuote(value) {
